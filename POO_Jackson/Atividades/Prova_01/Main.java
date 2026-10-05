@@ -128,6 +128,12 @@ public class Main {
                     excluirParticipante(entrada, robo);
 
                     break;
+
+                case 0:
+
+                    System.out.println("Saindo...");
+
+                    break;
                 default:
                     System.out.println("Operação inválida.");
                     break;

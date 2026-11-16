@@ -21,15 +21,53 @@ Não existe setter. Energia, pontos e resultados só mudam por métodos como ata
 As validações ficam na Robo: no construtor e em validarRecuperacao.
 
 Imagens da sequencia de codigos
+
+### Demonstre um combate para cada combinação:
+
+Criar(1):
 ![alt text](image.png)
 ![alt text](image-1.png)
+
+Listar(3):
 ![alt text](image-2.png)
+
+ofensivo contra defensivo(4):
 ![alt text](image-3.png)
+
+Jackson (ofensivo) atacou Renan (defensivo) na rodada 2 e causou 7 de dano.
+
+- Ataque: 10 + 5 (bônus do ofensivo) = 15
+- Defesa do alvo: 15 − 10 = 5 (já atende ao dano mínimo de 5)
+- Rodada par: 5 + 5 = 10
+- Redução do defensivo: 10 − 3 = **7**
+
+Também aparece o dano mínimo: Renan atacando Jackson na rodada 1 daria 15 − 20 = −5, e o dano mínimo elevou para 5. Renan venceu.
+
+ofensivo contra equilibrado(4):
 ![alt text](image-4.png)
+
+Jackson (ofensivo) atacou Claudia (equilibrada) na rodada 2 e causou 15 de dano.
+
+- Ataque: 10 + 5 (bônus do ofensivo) = 15
+- Defesa do alvo: 15 − 5 = 10
+- Rodada par: 10 + 5 = 15
+- O equilibrado não reduz o dano: **15**
+
+Claudia venceu.
+
+defensivo contra equilibrado(4):
 ![alt text](image-5.png)
+
+Claudia (equilibrada) atacou Renan (defensivo) na rodada 2 e causou 22 de dano.
+
+- Ataque: 30 (sem modificador)
+- Defesa do alvo: 30 − 10 = 20
+- Rodada par: 20 + 5 = 25
+- Redução do defensivo: 25 − 3 = **22**
+
+Renan venceu e Claudia chegou a 0 de energia.
+
+Em todos os casos o `Main` só chama `atacar`. O tipo de cada robô define o ataque e a redução do dano por meio dos métodos sobrescritos com `@Override`.
+
+Classificação(7):
 ![alt text](image-6.png)
-![alt text](image-7.png)
-![alt text](image-8.png)
-![alt text](image-9.png)
-![alt text](image-10.png)
-![alt text](image-11.png)

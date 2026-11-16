@@ -1,4 +1,4 @@
-package POO_Jackson.Atividades.Prova_01;
+package POO_Jackson.Provas.Prova_01;
 
 import java.util.ArrayList;
 import java.util.InputMismatchException;
